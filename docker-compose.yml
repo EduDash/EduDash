@@ -1,0 +1,26 @@
+version: '3'
+services:
+  api-gateway:
+    build: './api-gateway'
+    depends_on:
+      - identity-service
+    ports:
+      - 3000:3000
+    volumes:
+      - ./api-gateway:/opt/app
+
+  identity-service:
+    build: './identity-service'
+    depends_on:
+      - identity-service-db
+    volumes:
+      - ./identity-service:/opt/app
+    environment:
+      - DB_URI=mongodb://root:password@identity-service-db
+  identity-service-db:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    image: mongo:latest
+    ports:
+      - 27017:27017
