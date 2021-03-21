@@ -5,3 +5,7 @@
 [submodule "IdentityService"]
 	path = identity-service
 	url = https://github.com/EduDash/IdentityService
+
+[submodule "InstitutionService"]
+	path = institution-service
+	url = https://github.com/EduDash/InstitutionService
