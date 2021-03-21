@@ -1,0 +1,18 @@
+{
+  "name": "@edudash/api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "compose": "docker-compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduDash/EduDash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduDash/EduDash/issues"
+  },
+  "homepage": "https://github.com/EduDash/EduDash#readme"
+}

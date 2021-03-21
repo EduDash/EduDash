@@ -8,6 +8,8 @@ services:
       - 3000:3000
     volumes:
       - ./api-gateway:/opt/app
+    environment:
+      - PORT=3000
 
   identity-service:
     build: './identity-service'
@@ -16,11 +18,15 @@ services:
     volumes:
       - ./identity-service:/opt/app
     environment:
-      - DB_URI=mongodb://root:password@identity-service-db
+      - DB_URI=mongodb://root:root@identity-service-db
+      - PORT=3001
+    ports:
+      - 3001:3001
   identity-service-db:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_ROOT_PASSWORD=root
     image: mongo:latest
     ports:
       - 27017:27017
+    command: mongod
