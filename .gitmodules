@@ -1,0 +1,7 @@
+[submodule "APIGateway"]
+	path = api-gateway
+	url = https://github.com/EduDash/APIGateway
+
+[submodule "IdentityService"]
+	path = identity-service
+	url = https://github.com/EduDash/IdentityService
