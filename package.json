@@ -1,0 +1,18 @@
+{
+  "name": "@edudash/core",
+  "version": "1.0.0",
+  "description": "[![Open Collective](https://opencollective.com/edudash/tiers/badge.svg)](https://opencollective.com/edudash/) [![GitHub latest release version](https://img.shields.io/github/v/release/edudash/edudash.svg?style=flat)](https://github.com/edudash/edudash/releases/latest) [![Github All Releases download count](https://img.shields.io/github/downloads/edudash/edudash/total.svg?style=flat)](https://github.com/edudash/edudash/releases/latest) [![GitHub contributors](https://img.shields.io/github/contributors/edudash/edudash.svg?style=flat)](https://github.com/edudash/edudash/graphs/contributors)",
+  "scripts": {
+    "compose": "docker-compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduDash/EduDash.git"
+  },
+  "author": "Arvin Abdollahzadeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EduDash/EduDash/issues"
+  },
+  "homepage": "https://github.com/EduDash/EduDash#readme"
+}

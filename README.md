@@ -10,7 +10,9 @@ To run the project, first ensure you have [Docker](https://www.docker.com) insta
 
 Next, clone the EduDash git repository with
 
-> `git clone https://www.github.com/EduDash/EduDash`
+```shell
+git clone https://github.com/EduDash/EduDash
+```
 
 This will automatically pull all submodule microservices which are a dependency of EduDash, such as IdentityService (which manages authentication).
 
@@ -23,7 +25,7 @@ Finally, edit any desired configuration in `docker-compose.yml` and run `npm run
 | Property     | Value   | Description                                                                                          |
 | ------------ | ------- | ---------------------------------------------------------------------------------------------------- |
 | DB Engine    | MongoDB | The data storage engine for the application. EduDash uses MongoDB by default with WiredTiger.        |
-| MIS Provider | Wonde   | The school management information service, which integrates with your school's student/subject data. |
+| MIS Provider | N/A     | The school management information service, which integrates with your school's student/subject data. |
 
 # Contributing
 
