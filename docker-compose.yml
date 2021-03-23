@@ -18,14 +18,33 @@ services:
     volumes:
       - ./identity-service:/opt/app
     environment:
-      - DB_URI=mongodb://root:root@identity-service-db
+      - DB_URI=mongodb://root:password@identity-service-db
       - PORT=3001
     ports:
       - 3001:3001
+
   identity-service-db:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    command: mongod
+
+  institution-service-db:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    command: mongod
+
+  assignment-service-db:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
     image: mongo:latest
     ports:
       - 27017:27017
