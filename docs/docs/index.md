@@ -1,1 +1,1 @@
-# EduDash
+# Getting Started

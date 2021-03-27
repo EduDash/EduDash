@@ -1,0 +1,85 @@
+/*Primary Thematic Colors*/
+:root {
+  --md-primary-fg-color: #00cb9f;
+  --md-primary-fg-color--dark: #1d1e26;
+  --md-primary-fg-color--light: #00cb9f;
+  --md-accent-fg-color: #00cb9f;
+}
+
+/* Navigation Modifications */
+.md-header {
+  background: var(--md-primary-fg-color--dark);
+}
+
+.md-footer-copyright {
+  display: none;
+}
+
+/*Header Modifications*/
+.md-typeset h1 {
+  color: #00cb9f;
+}
+h1 {
+  text-transform: uppercase;
+}
+h2 {
+  color: #00cb9f;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+h4 {
+  padding-top: 1em;
+}
+
+/*Standardize Font Awesome CSS Styling*/
+.discord {
+  font-size: 25px;
+}
+.github {
+  font-size: 25px;
+}
+
+/*Additional Modifications*/
+.md-typeset .admonition {
+  border-left: 0.2rem solid #00cb9f;
+  border-color: #00cb9f;
+}
+/*Admonition Question Variant*/
+/*Upper Section*/
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary,
+.md-typeset .faq > .admonition-title,
+.md-typeset .faq > summary,
+.md-typeset .help > .admonition-title,
+.md-typeset .help > summary {
+  border-color: #00cb9f;
+  background-color: rgba(0, 184, 212, 0.1);
+  font-size: 0.8rem;
+}
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before,
+.md-typeset .faq > .admonition-title::before,
+.md-typeset .faq > summary::before,
+.md-typeset .help > .admonition-title::before,
+.md-typeset .help > summary::before {
+  background-color: #00cb9f;
+  top: 0.5rem;
+}
+.md-typeset summary::after {
+  top: 0.5rem;
+}
+/*Lower Section*/
+.md-typeset .admonition.question,
+.md-typeset details.question,
+.md-typeset .admonition.faq,
+.md-typeset details.faq,
+.md-typeset .admonition.help,
+.md-typeset details.help {
+  border-color: #00cb9f;
+  font-size: 0.8rem;
+}
+/*Table Styling*/
+.md-typeset table:not([class]) th {
+  font-weight: bold;
+  background-color: #00cb9f;
+}
