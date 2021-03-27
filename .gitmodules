@@ -9,3 +9,11 @@
 [submodule "InstitutionService"]
 	path = institution-service
 	url = https://github.com/EduDash/InstitutionService
+
+[submodule "HyperService"]
+	path = hyper-service
+	url = https://github.com/EduDash/HyperService
+
+[submodule "Documentation"]
+	path = docs
+	url = https://github.com/EduDash/docs
