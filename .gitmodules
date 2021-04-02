@@ -17,3 +17,7 @@
 [submodule "Documentation"]
 	path = docs
 	url = https://github.com/EduDash/docs
+
+[submodule "EduDash SDK"]
+	path = sdk-js
+	url = https://github.com/EduDash/edudash-sdk-js
